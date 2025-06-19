@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://tnp-nsec-backend.onrender.com/api/v1'
+export const BASE_URL = "https://tnp-nsec-backend.onrender.com/api/v1";
