@@ -21,7 +21,6 @@ const cardData = [
     title: 'Akash Raj',
     description: 'Query Resolution Lead – Handles all incoming questions and provides timely support.',
     email: 'akashraj.it2021@nsec.ac.in',
-    email: 'akashraj.it2021@nsec.ac.in',
   },
   {
     id: 4,
