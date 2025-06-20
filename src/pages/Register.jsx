@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import { BASE_URL } from "../config/config";
 
 const Register = () => {
   const [form, setForm] = useState({
@@ -24,7 +25,7 @@ const Register = () => {
     }
 
     try {
-      const { data } = await axios.post("http://localhost:4000/api/v1/u/register", form);
+      const { data } = await axios.post(`${BASE_URL}/u/register`, form);
       toast.success(data.message || "Registration successful");
       localStorage.setItem("token", data.token);
     } catch (error) {
@@ -35,7 +36,10 @@ const Register = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <Toaster position="top-center" />
-      <form onSubmit={handleSubmit} className="p-8 bg-white rounded shadow-md w-[90%] max-w-md">
+      <form
+        onSubmit={handleSubmit}
+        className="p-8 bg-white rounded shadow-md w-[90%] max-w-md"
+      >
         <h2 className="mb-6 text-2xl font-bold text-center">Register</h2>
 
         <input

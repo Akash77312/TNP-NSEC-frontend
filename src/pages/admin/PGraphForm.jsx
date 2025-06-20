@@ -19,7 +19,7 @@ const PGraphForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:4000/api/v1/admin/graph", {
+      await axios.post(`${BASE_URL}/admin/graph`, {
         ...formData,
         postGraduate: Number(formData.postGraduate),
         underGraduate: Number(formData.underGraduate),

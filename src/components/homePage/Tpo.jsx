@@ -39,7 +39,7 @@ const Tpo = () => {
             ensure that the recruitment process becomes a smooth and pleasing
             experience for both the recruiters and the students. Feel free to
             contact the Training & Placement Office. With this, I welcome all
-            the recruiters to SGGSIE&T.
+            the recruiters to NSEC
           </p>
           <p className="sm:p-2.5 p-1 mx-1 sm:mx-2 text-[12px] lg:text-[16px] text-justify font-normal w-[90%] md:text-sm lg:text-lg">
             Warm Regards <br />
